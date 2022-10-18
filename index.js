@@ -1,16 +1,14 @@
 const express = require("express");
-const connectToMongo = require("./db");
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Helo dude");
+  res.send("Express on Vercel");
 });
 
 app.listen(5000, () => {
-  console.log(`Listening to port 5000`);
+  console.log("Running on port 5000.");
 });
 
-connectToMongo();
-
+// Export the Express API
 module.exports = app;
