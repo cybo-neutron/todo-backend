@@ -12,3 +12,5 @@ app.listen(5000, () => {
 });
 
 connectToMongo();
+
+module.exports = app;
